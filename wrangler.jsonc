@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "friend-website",
+  "compatibility_date": "2026-04-13",
+  "main": "./dist/_worker.js",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "aniverse-production",
+      "database_id": "dd581d3b-0d92-444c-8db9-12f9bbfebdfd"
+    }
+  ],
+  "vars": {
+    "JWT_SECRET": "aniverse-super-secret-key-change-in-production-2026",
+    "APP_NAME": "AniVerse"
+  }
+}

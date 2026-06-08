@@ -1,0 +1,23 @@
+{
+  "name": "friend-website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && echo _worker.js > ./dist/.assetsignore",
+    "preview": "wrangler pages dev ./dist",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "bcryptjs": "^3.0.3",
+    "hono": "^4.12.12",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "@hono/vite-build": "^1.2.0",
+    "@hono/vite-dev-server": "^0.18.2",
+    "vite": "^6.3.5",
+    "wrangler": "^4.4.0"
+  }
+}

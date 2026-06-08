@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.wrangler/
+*.log
+.env
+.dev.vars
+.DS_Store
+id_friend
+id_friend
+id_friend
+id_friend.pub
